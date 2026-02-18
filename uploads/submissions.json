@@ -1,0 +1,13 @@
+[
+    {
+        "submit_time": "2026-02-18 23:50:38",
+        "name": "陈逊",
+        "gender": "male",
+        "phone": "13669063633",
+        "is_secret": "no",
+        "address": "华中科技大学沁苑东十一舍505",
+        "dispute_type": "1",
+        "description": "纠纷事项",
+        "evidence_files": []
+    }
+]

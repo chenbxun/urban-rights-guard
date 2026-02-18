@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        
+        <div class="text-center mb-5 mt-4">
+            <h2 class="fw-bold text-primary">城中村改造法规精准检索库</h2>
+            <p class="text-muted">权威法律库检索 | 土地规划管理 | 征收补偿标准 | 法律维权指引</p>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+            <div class="card-body p-4">
+                <form action="/search" method="post" class="d-flex">
+                    <input type="text" name="keyword" class="form-control form-control-lg me-2" 
+                           placeholder="请输入法律名称或关键词，如：规划区、建设用地、征收补偿..." value="{{ query }}">
+                    <button type="submit" class="btn btn-primary btn-lg">🔍 搜索</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="list-group">
+            {% if results %}
+                {% for item in results %}
+                <a href="/law/{{ item.id }}" class="list-group-item list-group-item-action p-3 mb-2 border rounded shadow-sm">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1 text-primary">{{ item.title }}</h5>
+                        <small class="text-muted">{{ item.date }}</small>
+                    </div>
+                    <p class="mb-1 mt-2 text-secondary">{{ item.summary }}</p>
+                    <span class="badge bg-info text-dark">{{ item.tag }}</span>
+                </a>
+                {% endfor %}
+            {% else %}
+                <div class="alert alert-warning text-center">
+                    未找到相关法规，请尝试搜索 "土地" 或 "拆迁"
+                </div>
+            {% endif %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}

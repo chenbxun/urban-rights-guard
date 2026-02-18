@@ -1,0 +1,439 @@
+Mime-Version: 1.0
+Content-Base: https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/bgtwj/202003/t20200316_973182.shtml
+Content-Type: Multipart/related; boundary="NEXT.ITEM-BOUNDARY";type="text/html"
+
+--NEXT.ITEM-BOUNDARY
+Content-Type: text/html; charset="utf-8"
+Content-Location: https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/bgtwj/202003/t20200316_973182.shtml
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+</style>
+</head>
+<body>
+            <!-- 文章正文 -->
+            <div class="articleWrapper">
+                <div class="articleHead">
+                    <h2>
+                        市人民政府办公厅关于做好城中村改造拆迁验收工作的通知
+                    </h2>
+                    <div class="articleInfo">
+                        <ul>
+                            <li>索引号：
+                                K28044908/2020-799681
+                            </li>
+                            <li>发文机构：
+                                市人民政府办公厅
+                            </li>
+                            <li>发文字号：
+                                武政办〔2010〕166号
+                            </li>
+                            <li>主题分类：
+                                城乡建设、环境保护;其他
+                            </li>
+                            <li>成文日期：
+                                2010年12月10日
+                            </li>
+                            <li>发布日期：
+                                2010年12月12日
+                            </li>
+                            <script>
+                                //如果文件是指定文件，则写成“执行时限截至：2020年12月31日”
+                                if ("K28044908/2020-883700" == "K28044908/2020-799681") {
+                                    document.writeln("<li>执行时限截至：2020年12月31日</li>");
+                                } else {
+                                    var Effectivestate = "有效";
+                                    if (Effectivestate != "" && Effectivestate != "3") {
+                                        document.writeln("<li>有效性：" + Effectivestate + "</li>");
+                                    }
+                                }
+                            </script><li>有效性：有效</li>
+
+                        </ul>
+                    </div>
+                    <!-- ai输出 -->
+                    <div class="ai_content">
+                        <div class="close_btn"></div>
+                        <div class="ai_output"></div>
+                    </div>
+                    <script>
+                        //
+                        let aiOpShow = false
+                        let aiOpRunning = false;
+                        let aiData = '';
+                        $('.ai_btn').click(function (e) {
+                            if (aiOpRunning) {
+                                return false;
+                            }
+                            aiOpRunning = true;
+                            //
+                            if (aiOpShow) {
+                                _changeOpHide();
+                            } else {
+                                _changeOpShow();
+                            }
+                        })
+                        function _changeOpShow() {
+                            aiOpShow = true;
+                            $('.ai_output').removeClass("hide");
+                            $('.ai_content').show();
+                            setTimeout(() => {
+                                if (aiData.length == 0) {
+                                    _doAiExe();
+                                } else {
+                                    _onAiData(aiData);
+                                }
+                                aiOpRunning = false;
+                            }, 200);
+                        }
+                        function _changeOpHide() {
+                            aiOpShow = false;
+                            $('.ai_output').empty();
+                            $('.ai_output').addClass("hide");
+                            $('.ai_content').slideUp();
+                            aiOpRunning = false;
+                        }
+
+                        function _onAiData(data) {
+                            aiData = data;
+                            $('.ai_output').empty();
+                            $('.ai_output').append(data);
+                        }
+
+                        function _onAiError() {
+                            $('.ai_output').empty();
+                            $('.ai_output').append('<div></div>');
+                        }
+
+                        function _doAiExe() {
+                            let _did = "K28044908/2020-799681";
+                            let _html = $('.trs_editor_view').html();
+                            $.ajax({
+                                url: 'https://api.jp.cjn.cn/ai/wuhan/policy',
+                                type: "post",
+                                data: {
+                                    docId: _did,
+                                    content: _html,
+                                },
+                                timeout: 120000,
+                                success: function (data) {
+                                    _onAiData(marked.parse(data.data));
+                                },
+                                error: function () {
+                                    _onAiError();
+                                }
+                            });
+                        }
+
+                        $('.close_btn').on('click', function () {
+                            _changeOpHide();
+                        })
+                    </script>
+                    <!-- 正文内容 -->
+                    <div class="article no_border">
+                        <div class="TRS_Editor">
+                            <style type="text/css">
+                                .TRS_Editor P {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor DIV {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor TD {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor TH {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor SPAN {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor FONT {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor UL {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor LI {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor A {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+                            </style>
+                            <div class="TRS_Editor">
+                                <div>
+                                    <!-- 附件中的图片放前面显示 -->
+                                    <div class="tp" id="articleTP" name="articleTP" style="display: none">
+    <ul>
+        
+    </ul>
+</div>
+<script>
+    var PIC = "";
+    if (PIC != null && PIC != '') {
+        var tp = document.getElementById('articleTP');
+        if(tp!=null){
+            tp.style.display = "block";
+        }
+    }
+</script>
+                                    <div class="view TRS_UEDITOR trs_paper_default trs_external trs_web trs_key4format"><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em; text-align: center;"><strong>市人民政府办公厅关于做好城中村改造拆迁验收工作的通知</strong></p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em; text-align: center;">武政办〔2010〕166号</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em; text-align: center;"><br></p><p style="font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em; text-indent: 0em;">各区人民政府，市人民政府各部门：</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">根据《市人民政府关于进一步加快城中村和旧城改造等工作的通知》（武政〔2009〕37号）精神，为了做好我市城中村改造整村拆迁的验收工作，兑现还建面积奖励政策，经市人民政府同意，现将有关事项通知如下：</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">一、拆迁验收范围</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">城中村改造整村拆迁验收范围为：各村城中村综合改造规划确定的还建用地、开发用地、规划控制用地、储备用地等按照城中村改造政策要求实施房屋拆迁的用地。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">经批准实施分包挂牌的，可以分包进行验收，其拆迁验收范围为：挂牌条件确定范围内的还建用地、开发用地、规划控制用地、储备用地等按照城中村改造政策要求完成房屋拆迁的用地。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">二、奖励政策</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">自开发用地挂牌成交之日起，半年内完成整村拆迁的，按照还建规模的20%奖励还建面积；1年内完成整村拆迁的，按照还建规模的10%奖励还建面积。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">三、拆迁验收程序</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">（一）区级自查</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">各村在完成整村（整包）拆迁工作后，应当向区城中村改造工作机构提出验收申请；各区城中村改造工作机构接到申请后，应当及时组织区国土规划分局及区土地储备分中心、区城管局、街道办事处等相关单位进行自查验收；自查验收合格的，经区人民政府同意后，由区城中村改造工作机构向市人民政府重点工程督查协调办提出验收申请并提交以下资料：</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">1．整村（整包）拆迁的自查验收情况报告和书面申请；</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">2．各村城中村改造规划批复和布局图；</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">3．土地成交确认书及各类用地的供地附图；</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">4．各类用地拆迁完毕后修测的1：2000地形图（图中注明各类用地范围）；</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">5．各村的储备用地、控制用地等与市土地整理储备中心或接管单位分别达成的土地储备协议或接管协议；</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">6．土地征、转用涉及的相关费用支付情况及单据；</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">7．规划控制用地尚未完成征地工作的村配合完成征地工作的承诺书。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">（二）市级验收</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">市人民政府重点工程督查协调办自收到各区拆迁验收申请之日起10个工作日内，组织市国土规划局、市土地整理储备中心、市城管局、市城乡建设委及各控制用地使用单位组成市验收小组开展验收，对各村城中村综合改造规划或者挂牌条件确定的还建用地、开发用地、规划控制用地、储备用地的房屋是否拆迁完毕进行确认；对各村的申请验收资料进行核实。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">验收工作结束后，由市验收小组向市人民政府重点工程督查协调办提交验收报告。对验收合格的，由市人民政府重点工程督查协调办函告市国土规划局，市国土规划局按照政策落实还建奖励；对未在规定的时间内完成整村（整包）拆迁的，规划预留的还建奖励用地由区土地储备机构进行储备。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">四、工作要求</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">各区要认真做好自查验收工作，从严把关，对自查不合格的，不得提出验收申请；各区上报的资料必须做到情况真实、数据准确，特别是对完成整村拆迁的时间一定要准确上报，不得弄虚作假。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">市验收小组要认真做好验收工作，严格审核各区上报的资料，对整村（整包）拆迁情况，必须到现场进行全面验收，确保验收情况准确无误。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">城中村综合改造规划控制用地拆迁腾退后，相关使用单位应当及时接收；一时难以交接的，由市土地整理储备中心接管，接管时间不影响完成拆迁时间的确认。各区人民政府要加强控管工作，城管执法部门要加大执法力度，各相关接收单位和市土地整理储备中心要加强日常管理，不得出现管理上的空档，避免出现违法建设。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em;">经验收合格后对各村兑现的还建奖励规模，只能对本村范围内的拆迁户进行还建，以解决本村在政策内难以解决的历史遗留问题。还建房多余部分，交由区人民政府统一掌握，调剂给用地不足的村用于还建安置，或者依法纳入住房保障体系，作为经济适用房销售或者廉租房使用。各区人民政府、各有关部门要认真履行职责、切实加强监管，做好还建房安置工作，坚决制止各村销售还建房的行为，一经发现，取消还建奖励规模，由区人民政府按照建设成本收回奖励部分的还建房，调剂给用地不足的村用于还建安置。监察部门要加强城中村改造还建房安置工作的监督检查，对弄虚作假、徇私舞弊、故意推诿、失职渎职等不作为、乱作为的行为，依法追究有关责任人的责任。</p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em; text-align: right;"><br></p><p style="text-indent: 2em; font-family: 宋体, SimSun; font-size: 16px; line-height: 1.5em; text-align: right;">二０一０年十二月十日</p></div>
+                                    <p style="text-align: right;">　　</p>
+                                </div>
+                            </div>
+                            <div class="shareWrapper clear">
+                                <span class="interactive" style="display: none;">
+                                    <span class="print" onclick="javascript:window.print()">【&nbsp;打印&nbsp;】</span>
+                                    <span class="download print">【&nbsp;下载&nbsp;】</span><span class="scan print">
+                                        <a href="javascript:;">【&nbsp;扫一扫&nbsp;】
+                                            <div class="code-img" id="qrcodeCanvas">
+                                                <script>
+                                                    jQuery('#qrcodeCanvas').qrcode(document.location.href);
+                                                </script><canvas width="256" height="256"></canvas>
+                                            </div>
+                                        </a>
+                                    </span>
+                                    <span class="print" onclick="AddFavorite()">【&nbsp;收藏&nbsp;】</span>
+                                    <div class="share">
+                                        <link rel="stylesheet" href="../../../../../material/css/share.min.css">
+ <ul>
+  <li class="row">
+   <div id="share-2" class="share-component social-share"><a class="social-share-icon icon-wechat" href="javascript:;" tabindex="-1"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode"><img src="data:image/png;base64,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" width="100" height="100"></div><div class="help"><p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p></div></div></a><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https%3A%2F%2Fwww.wuhan.gov.cn%2Fzwgk%2Fxxgk%2Fzfwj%2Fbgtwj%2F202003%2Ft20200316_973182.shtml&amp;title=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%81%9A%E5%A5%BD%E5%9F%8E%E4%B8%AD%E6%9D%91%E6%94%B9%E9%80%A0%E6%8B%86%E8%BF%81%E9%AA%8C%E6%94%B6%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5&amp;desc=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%81%9A%E5%A5%BD%E5%9F%8E%E4%B8%AD%E6%9D%91%E6%94%B9%E9%80%A0%E6%8B%86%E8%BF%81%E9%AA%8C%E6%94%B6%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5%0A%E3%80%80%E3%80%80%E6%AD%A6%E6%94%BF%E5%8A%9E%E3%80%942010%E3%80%95166%E5%8F%B7%0A%E3%80%80%E3%80%80%E5%90%84%E5%8C%BA%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%EF%BC%8C%E5%B8%82...&amp;summary=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%81%9A%E5%A5%BD%E5%9F%8E%E4%B8%AD%E6%9D%91%E6%94%B9%E9%80%A0%E6%8B%86%E8%BF%81%E9%AA%8C%E6%94%B6%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5%0A%E3%80%80%E3%80%80%E6%AD%A6%E6%94%BF%E5%8A%9E%E3%80%942010%E3%80%95166%E5%8F%B7%0A%E3%80%80%E3%80%80%E5%90%84%E5%8C%BA%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%EF%BC%8C%E5%B8%82...&amp;site=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%81%9A%E5%A5%BD%E5%9F%8E%E4%B8%AD%E6%9D%91%E6%94%B9%E9%80%A0%E6%8B%86%E8%BF%81%E9%AA%8C%E6%94%B6%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5%20-%20%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&amp;pics=https%3A%2F%2Fwww.wuhan.gov.cn%2Fmaterial%2Fwxshare%2Fwx-share-icon.jpg" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Fwww.wuhan.gov.cn%2Fzwgk%2Fxxgk%2Fzfwj%2Fbgtwj%2F202003%2Ft20200316_973182.shtml&amp;title=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%81%9A%E5%A5%BD%E5%9F%8E%E4%B8%AD%E6%9D%91%E6%94%B9%E9%80%A0%E6%8B%86%E8%BF%81%E9%AA%8C%E6%94%B6%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5&amp;source=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%81%9A%E5%A5%BD%E5%9F%8E%E4%B8%AD%E6%9D%91%E6%94%B9%E9%80%A0%E6%8B%86%E8%BF%81%E9%AA%8C%E6%94%B6%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5%20-%20%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&amp;desc=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%81%9A%E5%A5%BD%E5%9F%8E%E4%B8%AD%E6%9D%91%E6%94%B9%E9%80%A0%E6%8B%86%E8%BF%81%E9%AA%8C%E6%94%B6%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5%0A%E3%80%80%E3%80%80%E6%AD%A6%E6%94%BF%E5%8A%9E%E3%80%942010%E3%80%95166%E5%8F%B7%0A%E3%80%80%E3%80%80%E5%90%84%E5%8C%BA%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%EF%BC%8C%E5%B8%82...&amp;pics=https%3A%2F%2Fwww.wuhan.gov.cn%2Fmaterial%2Fwxshare%2Fwx-share-icon.jpg" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fwww.wuhan.gov.cn%2Fzwgk%2Fxxgk%2Fzfwj%2Fbgtwj%2F202003%2Ft20200316_973182.shtml&amp;title=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%81%9A%E5%A5%BD%E5%9F%8E%E4%B8%AD%E6%9D%91%E6%94%B9%E9%80%A0%E6%8B%86%E8%BF%81%E9%AA%8C%E6%94%B6%E5%B7%A5%E4%BD%9C%E7%9A%84%E9%80%9A%E7%9F%A5&amp;pic=https%3A%2F%2Fwww.wuhan.gov.cn%2Fmaterial%2Fwxshare%2Fwx-share-icon.jpg&amp;appkey=" target="_blank"></a></div>
+  </li>
+ </ul>
+ <script src="../../../../../material/js/jquery.share.min.js"></script>
+ <script>
+//一键分享相关配置
+var $config = {
+      url: window.location.href,// 网址，默认使用 window.location.href
+      title: '市人民政府办公厅关于做好城中村改造拆迁验收工作的通知',
+      description: '市人民政府办公厅关于做好城中村改造拆迁验收工作的通知\n　　武政办〔2010〕166号\n　　各区人民政府，市...',
+      image: 'https://www.wuhan.gov.cn/material/wxshare/wx-share-icon.jpg',
+      sites : ['wechat','qzone', 'qq', 'weibo'], // 启用的站点
+      wechatQrcodeTitle: '微信扫一扫：分享', // 微信二维码提示文字
+      wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>',
+      target : '_blank' //打开方式
+  };
+  $('#share-2').share($config);
+ </script>
+                                    </div>
+                                </span>
+                            </div>
+                            <!-- 文章二维码 -->
+<style>
+    .f-qrc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .f-qrc .fj-qrc {
+        display: grid;
+        margin-right: 12px;
+    }
+
+    .f-qrc .fj-qrc canvas {
+        height: 120px;
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .f-qrc .fj-wxgzh {
+        /* display: grid; */
+        display: none;
+        margin-left: 12px;
+    }
+
+    .f-qrc .fj-wxgzh .szfwxgzh {
+        height: 120px;
+        width: 120px;
+        background-image: url(http://www.wuhan.gov.cn/material/images/szfwxgzh.jpg);
+        background-size: 120px 120px;
+        margin: 0 auto;
+    }
+</style>
+<style>
+    .fj-icon {
+        width: 24px;
+        height: 24px;
+    }
+</style>
+<div class="f-qrc">
+    <div class="fj-qrc" id="fj-qrc">
+        <script>
+            var url = "https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/bgtwj/202003/t20200316_973182.shtml";
+            $('#fj-qrc').qrcode({
+                render: "canvas",
+                text: url
+            });　　
+        </script><canvas width="200" height="200"></canvas>
+        <span style="margin-top: 12px;">扫一扫在手机上查看当前页面</span>
+    </div>
+    <div class="fj-wxgzh">
+        <span class="szfwxgzh"></span>
+        <span style="margin-top: 12px;">武汉市人民政府微信公众号</span>
+    </div>
+</div>
+<div class="article-footer" id="articleFJ" name="articleFJ" style="display: none">
+    <h2 class="f-tit">附件：</h2>
+    <ul id="appendix_list">
+        
+    </ul>
+    <div>
+        
+        
+        
+        
+
+    </div>
+</div>
+<script>
+    var XAPPENDIXS = "";
+    if (XAPPENDIXS != null && XAPPENDIXS != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+    var wpsFile = "";
+    if (wpsFile != null && wpsFile != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+    var ofdFile = "";
+    if (ofdFile != null && ofdFile != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+    var pdfFile = "";
+    if (pdfFile != null && pdfFile != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+    var xgfj = "";
+    if (xgfj != null && xgfj != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 相关解读 -->
+<div class="abouts xgjd" id="articleXGJD" name="articleXGJD" style="display: none">
+    <div class="subTitle">
+        <span>相关解读</span>
+    </div>
+    <ul>
+        
+    </ul>
+</div>
+
+<!-- 关联政策 -->
+<div class="abouts glzc" id="articleGLZC" name="articleGLZC" style="display: none">
+    <div class="subTitle">
+        <span>关联政策</span>
+    </div>
+    <ul>
+        
+    </ul>
+</div>
+
+<!-- 关联内容 -->
+<div class="abouts glnr" id="articleGLNR" name="articleGLNR" style="display: none">
+    <div class="subTitle">
+        <span>关联内容</span>
+    </div>
+    <ul>
+        
+    </ul>
+</div>
+
+<!-- 相关文章 -->
+<div class="abouts xgwz" id="articleXGWZ" name="articleXGWZ" style="display: none">
+    <div class="subTitle">
+        <span>相关文章</span>
+    </div>
+    <ul>
+        
+    </ul>
+</div>
+
+<script>
+    var PolicyInterpretation = "";
+    if (PolicyInterpretation != null && PolicyInterpretation != '') {
+        var xgjd = document.getElementById('articleXGJD');
+                        if(xgjd!=null){
+                            xgjd.style.display = "block";
+                        }
+    }
+    var relatedpolicy = "";
+    if (relatedpolicy != null && relatedpolicy != '') {
+        var glzc = document.getElementById('articleGLZC');
+                        if(glzc!=null){
+                            glzc.style.display = "block";
+                        }
+    }
+    var DOCRELNEWS = "";
+    if (DOCRELNEWS != null && DOCRELNEWS != '') {
+        var glnr = document.getElementById('articleGLNR');
+                        if(glnr!=null){
+                            glnr.style.display = "block";
+                        }
+    }
+    var relatedarticles = "";
+    if (relatedarticles != null && relatedarticles != '') {
+        var xgwz = document.getElementById('articleXGWZ');
+                        if(xgwz!=null){
+                            xgwz.style.display = "block";
+                        }
+    }
+</script>
+        </body></html>
+--NEXT.ITEM-BOUNDARY
+Content-Location: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAQAElEQVR4AezdBYw1TVYG4IuzuLu7u+suhMUJbsHdlwSXhcVJcIfgLME1uIRlCe4S3N3d9ec8Pd978349t+/M/+3/zczu3km9XadOnTpVXaeruqzvPOZut7vnLuClR2fcjwyRPF5j6IvcQ0cg8u8ydNznDhH+Bw59b9z7jHDSbvlfPzJxbzBE5L5/6EPuZYYZmfvMZ5DRe3I3pQZOBrkplrhVjrVBHn/4j3GH+JVJF0dH6FcZQhg+aOiLmvf3jQxZeNmhI//eQ8fhhd7yO6/nHSH64F2HPuTefJj0wrcPHaebxYMfDnN8usZb3C/PVfhOcL9Ju3drg+wjTsT11MDJINdT75u5HjPIP0wqzfQYnntkLnIPH4Ho0PwneM692XDS3B84dOR7lDXsg+7jhxv5jxs6Di90j7K+OMzxv2qQfNs3ypqoO3LPM6nkfQx/PzIH3TGDHExwYt7dGjgZ5O7W773WflMM8o1T8jTxtx36kNPtpFt5uhGI/EcMHfeRQ4T/NENHvv13G34cfugeZRmJiVvj/hG+W/7dMcjdKu2jgd6TQW6Yka/CIJp9btsISvgYvjrC43fX8XkTjpM+9IOHEF7jg4cf975DpCuzBhXZHyz+mw4dfo+ylDlpjRhH7O65qzDI3Sv9o6Dmk0FumFHXBvnPKt/rDf2AWzC6OET/ycTHadaH6PcbZtL+7NBxnzCEtSF41aHj/i/E+NajxMMbTTjuC4aIzscdWjz8UNHvPnRcl+21h0kWPnToOGXAA2UL/2eGSF4PGjquy9n6/3gEIr/lv/7IHHRrgzxeSf3o0AoH+k4+NP3vIxOn/z1E/+IwpYOeob7I8FUCGKJOcHGtx6xXPDzDEnt2+d3x6APy4kEF8OE5R+aQe8ZhiofnHzpOGfDghcIcX5nlA+5lWIvrulOGhTkXdUL2GNTtiJ53rfR87Ilz5TWwNsj3Tgli2W7+W/TDSv7Zh47rJvxZw4zOlxw6bqvJd9pPHWFPPTzr0NHzFkPH9dP5lcMkC/1kP1PxP2XoOEv9ZOEhYa78l5pw8v3MoeO6/FpjZLquwjvm37YjuTaId4UmCwrJhy265Z8oJV35Lz5hOuApho7rvLtSm/+bI5ybeYKh6YBnHvqQ039H/n9GgCw84dDh//bQcX81RPi/PnRcl0eZ6QD3ckiGfvHQdSV8EV45Cvl988I3GY8WZWMQFg088fcF/RtVe1ujrG7yHzXyeVJffehDTteXsvWBhC8d4fD/a+joedKhw/+jocO3exj+Jw4/rrvKprdGWVpU9LTfddj8S9EMkoLyewT1iND/nLsc38iEbtCvD2tx3S0Y1aRpP/0Se3bpitHV0AG6pjOJ3e73h8CDIXfRY8SIB/8xEeEzFB70g9PlaVqZyYJ7GVWLc494a3S9reMuDDPIov10uRk1wCBttR4hbNHG64dKr+uIrucrAV1N+D3K6qe/xHcmZWne390Rl6BbZ3eJW3zrVCmbbjNZvPwQ4fdIsuvk80fmkDOiS9ot/ztXCfdyDJKmzFcRfNiinUxZ6VuCDsdJB0+ycM4uRiZ4YMRyxt3tulvY1Z9uJAX88+Jfhmyd7i1ptvhPOwLKBS84dNxTDYEH3gl86Dp5iZE55Ho0KM0hvGIlVJ97mS50yZzI66oBBmH1wNMQ+l82CvW1w88TrHlOcHHvNNekNbKKzJcUv9eyuhsZkQvdg0YiOntiOOy9a50OTkTebmOEei1LF5oy971/eITH71FWy3z2xEW/e5zg4gw4orP9N1lizy5PNl7SnpsYJoLfI4T/nUSH3CsMM02sD3mpbDqg16D+YOTxwIhlgovrbmRhXHBxwiX5bk0MW4WZfeSVJ3G9lvXkw1Qu6Hv/1eHHOX0jHlrGelr0664jv7WW9WMRuOUn7WlieKtCbqSny+qCaT6eBDBeT9wbDpHm9xdDH3KXGWX1KOXlDilZ8Xr53eQuZeiJYSdxcj4ylugT981DhN9rWQ/c7XbudQ0jvd2tP91a4rfWsrqrvJXsnHepHmFtEAfZ0pRa409MIIUyG57g4joTi3BJ+8RL7NnlxcYLX6WEfurhX+TMqiP/byOcMuinJ3jO/eFwImPCOMHFGa2F/1sL5+zi9Er0t2+ieiax2xkZJs69hN911/WQ+LV/GaPtWulawSl8DTXAIHly+F2E15mAJxqsik5wcUY4eGAtSDrQzPHAXGIRnovRER4YsQzrnPvo4YgHLY0+eN3hH3LvOUzxa7zj8OP6iexJ4neNgHygR03CQZ/1GvGD7teGG/l3Hvoi95cjEPn1jmH4D2CQNEf+pNk7o4Lc8J45xE8Owu9dP0YI3zrPiC3O+k/4RiwLc3Vxc5HpLkKXEtGu4OcYpvKu0Xsy3Y24z0myuO6+etSU/Pn9acWS6MDFPZIFI8wDIudYZKF3DG2b4y3ogp5LfWJcfQ0cM0g/kd8yRVssOH6PlIzph7U4k6PIeBkvzLn0WtbWcsOI7Z1ucN+EhxvavCL633L4h9zbDDMyfWS0u6wROeh0X0mrDIeE9AiR6bUsLTb8rp/w+OowOvUUuS/raeEffal3k+/JIEXpKqzbRJnJUfi9lmVkEv5TRviI312fGwnuN2mip1cIhr13uqzIPNeeu9tcN9vVn1Ff0vYoq0R2JpKR6YfLbmn4XT/h8S1Ytq7cl49i9/xjLWQvdCKurgYY5GMmu2DIvXNmycY/eAIS8RlDRP7vho77wiHC/7OhL3JfMwKR91Kf4OKcv5LnGn87sZE3L5rg4iyPh6+7WJiri+Oj0dcjnBcdufCdfp/g4sxVorN9sgnrohfh1eVvJhwZ3fUEF2duJv0aTuwvAi4M0gJ4wYcNYTgKNvEnuDiz1aRRSQtzLmbG4fcBuok66CxSRn5tEHmu8dejJfI/PnQcI4TPOOG37+PR6GuDeCeE72xv0ug2o7N9FZ1wG6S7dw9pZDy80akOk1f7tw2xGSQJTv4NqAEGiTXjewpAmL+GyZc46Je0yRoefM/cW9JZg5rg4nzTF741IrLwAkvs2eVbx4tM+166ZMHWQOIee+TxwAt1goszj4pM7zx2vs5TReabllRnl37izzjnr0aY8oQ+tmoehQfqKvo/baUifBPqfRSDdPP55ImhCCTgryGTpJH5JFnce8w1fLPhpLO+NFGL86lB+Gbkke/dOgaJTPt28SLPIIl7rNEc/qsNHadbi4wDgOEbHUXecDUyvuKKzGV8BokeD2PSdDnffpjR79DfBBf3j3MN30erEzxzDHJGna43ogbWBjGNT8F6lOVJiEXtdkXGD8JoSWtYg4q8l27ibeokbU88m+5Rlqc58u2bTEW/jbToxwv9r5NAGF5r6EOuR1m6zaT9+RGWDra+eRyRvbMlkbTShO5R1l74GLE2iLNMkWcQhgCZ8KH3SWxjilvDwiRZYJDE/16Uj9/9dNNvPHHSQRukjWabQDz898hHv4oIzSDiQXlG7JzrUZaT8EnLINLBlkG6zBZfk7bLYER6LtNjjLVBjsme4q6gBhiERYPusjp7u2yR8UJKXD8lXmx5SoxqIu9FG74nLnTvc/fTb80naS2RRN5cIvn+wBCReZyhI9OjLC/1yCjPiB11lkuiR8tMWruQhxJ2mZ1VS9q+x/D4/Rtfehm8c2CQZnbGXdmGbJFrg7Q8gygMqIDIqyQ8wONDG6T19CirRzLWyiLnMwK6wLCXPmD8yDCIeDAMD3/L9w6hA5wlkw62DNJ6bBNIB9Lw1/iATjD0On4JM8jEndxNqYFjBrmnCsm6LA+9kutzYzzorsZLFA8sZ6T59yir1O+coSILnhQ+/OkIJW3vNr7m8MWD3+Oa4OK6G7FCLR5MYKNHOPS3LanOLpZvwv+FYZFbo8t2mR/GGTWbLnmdmxhupqgIpz8UBnrY6wAaHjjZkRtgEDzYGmWV+p2FPbJABx8cZhCGn6oEPcq67VxTyTiuSQeYrNEBKoIPusckcRYLD35umNKtIS4839CP2B05+yF0wWlieEdVeEWJdFmsFGxl26Ms1j0k917DjB4v4wkedb38Lp0nF5rWdUSJF7N42Fp+1z1GvruvphN/zN9afv/yjUQ9MfycDRnzImUHE0b3CeZ7eAsYJE2Q3xPDezvK6rWs/oS5K6N1ft0UXIFAYfjQtAnaiC2uR25GUAtzLt0ltkE6r6YnyYXOt43KssZXbKR0oiSyVi8OiTkUERkTRvUNDBL+QxjkUOIT75pqgEE8kUFb69OnTOFbXZ3g4lg3fJsxC3MuvWOYeL5vBvME2PMe0cV1y1kY98HFiCt52e+XP9jFC99TGdpqr3i4zGqvlWuyQAcfDA6E4a3mPvBA1zTBxXUr9YmdeOgV9qWFUBI4hq/AoOLD1/8tWufS/K0dw6Tj98TQ/sOouGvOYQJlB9vO8gflxANhPnhAhOGyBiELKpMPhs/0wVvP3eGBuprgOccg4oFBpFughZyTPjGurwYYhJUCP+SS0nzIEOGz3iHahGvEFmfpJDLtP9sSe3a5zI7hZZbfndL3hEIfo+lusOmfnuzJgrLxwYFsYTA5HbE7cp1X00ak8gFdunzAqyEZaS3iFzCIyg4ixO9DDpREpumtHcPI8p+Fslt46G63kx62dgy3lt939ccgdEAbpPvpphmELLhxPtgOUEZ4RAzSeTXNIPIBBpEPtEHclvgFDIJxwg2pgbVBnKZzABmM6fmwRftmI7dirYkstB5PSWRsCDmyCdapyIKlDTzwAsYDB6OT1idt4mHrkzafz0kHv5OE45uoSgde/HzoI6/d1eiKxYMyj4pzzjkr8UCPPKGXeHxhKx70COLBgXW8c1gbxFZnhCxlX0Sr1JTUYlvkjaxC+6H6yFjGZ1zwrXZk5IUH1pHCd1giaX3WIB58EhF++5bKk/aLKsJ7STrwsPDBqLLE9qR1MPHQhxP2AkNYrhcPzlYl37ebuDjL8uLBOa7IKD/eOawNEkUn/5pqgEE0oaB3DF9pyhSLDnnQaZ5J69cbIq85H0ywwezT6d116AqiU/eYvKwCb6g6yNaSk9ZTGdoPyCSBc1/Jq48ldXns9EXGIfKkbRmHwlsmefmGJPytFerl9HuE+MmAr7tQePCLB3hrOAAgHTijShYcGIhsjzrC4zffg4EHzbfsTx84cCcf2ProU/pDMJOWDnSPfPikEtbNyge2PkdwSkU8GDVV8j1pVCkeTAzlA76ywoPv2EuviK6IVdQpeB01sDaItSDWBCuqaW6OX+LBVjl7lPVPJdTN2Qs+Oq0vRay7rO6m+qeaLjPKir5jPp3uA3zvkfJ42YfuT9rIkAWT3MjogpKPg9TiQXcXGZ/z4YEzAeE75pq0/PAfvjaI0xyaFPhKiSKwD4AHvmSiZA1Nkiw4PZ747oKcvBAPvafRMkYs8gE7j9Hj5zrwwA5j+PfW9/O3dIChqLKALosPyhC9KpIs+PkQ8dD/gsnHQeJBdyce3n+U4EGPspRhohbnvU12wdogauCCmQAABP5JREFUi8Qj4+VRpcwMslhmbohvGSLNxzkoPHD2aUQW5+MXPDCiWJhz6aetR1ndZb3wyEkHPUEzMZyoo85EL2WzkUbHGq2zaU9wlHd5mu5RljNakW+/R1nObnVcaHWScm39WoUf6My9+CI38vdnEM0p0JQS+Q2TQ/j60QkurvkOsi3MuXzZIPI9yhr23vXEUJ8ded3FXmiD6BGL8iRt+62zad1d1Hb32LT7ji7dTuTbN9SNjA+UOi50j7J8lBR+G9/+kvxAnUfnwxgkCU7+DagBBknT4XvBpFiaEt4arBmenyKK/NYoK/Frv0dcrbPp5MPv7xb7yV7rPRTutSwbV/SBHU9PKeiy8KBHWa3Pz0uJX6PLbJ2q00S2BzEdb/k9MssoS2GCFtSUwm+/J1b9LeHWKKt1Nm0kE72ts+nE803ukr6bf3jHfEv6Kg10p/SBQxR4IBwo2yF9HqLItN9lfodKaMs3cspQUbeRkVneIbfFnALXWwO6rL11pig9Mml+0y2zRfcoy+QoTdKTGLonaLqLyf7SzsZS9LTf+ps2Qovybl1NG+nlPo0GI7/lu8fIG2FGrie5vfweWb51wsjf5jOIggc9Mglv7bfMFm2hMRlZNlcI6Kbt3wpFt7jIX8Y3wpFmjdbftA+Lotc9h27fSC/lue28bQsV3cvvfrwtUf1+swYYne2f1rJSWzfdXz8tnvjuAg7RLB1+yxtb35v77abdL9ruBnVr0bm1luUoT1qKtabI21UMv48feWrD75acdPxbu5Y79+lFjreG72TEgxFm4rsbDG/tm2inDLf5a4P0juFtgqMx4e4KNPPwneAYscV1s10YBy4t4+ABQwMj86HXsnR9eGDHLSqN7vAAHT4ZPJA2fL/kgAdbO4YW/3JftgCStstsvS4ydksPyYS39i1Gyv8c1gZZJzyFr7gG1gbpiaGRQJ6A7kbC41u3SZG7qTad+LVv8qW5g8PK63hhXYp8wOQOD3RBeKDrowOMvsSDXUU88CTywZMtfg1f0ooHhyvohh5x9VpW10nTVodbN32wnhjincPaIBbtoswhBDcC3Y0IB72W1c256ehb+yZfbhgsaq7jhS3XJy8/VYsHTtqH7yGiA2wTiAe7injQ3az1NPFruEey0LulfcihdwzJpwxN+7WK6HYKhj7oiaH3D945rA0SRSf/mmrgZJBrqvitbK/CIPpJ75Rj6GOcDk7o8sAu21bZw/eNXnR/bJjjGx2Fv/VV04jtnV3IyBs1yR98YBohXSveZWEUGp1WLJLO8Dx8i4vRv5w62QdOxPXXwFW0kOu/y0eiElyFQTTTVIlf8RE+Bl1EmrODeIdke+QT3Zf1dYOHdOqyosM6W8rgVyPCxwttK1t4ja1hddLtjhFXYZBj+Z/iVjVwMsiqQq47eMwgfrHhUNNunv8teNE9aNKR8aGN8DHoIpKH7iVp2xef8IOHEAa/nRXdfqEHD3x3Hn77vuia5IsjtxBzsTwuDLrZYS3OjDzpLemLBxPGRWAuDvpFxsRRPDgJP9GL84kGHqjnyN9zzCBLytPlamvgZJCrre8Lc1sbxCRl33wm9b2hexFOukl+1FkG12ShP0n20Y300Mvprcwal3RgYthxh2gTQ7LQPxpjEiof8F/UxIOuEg9MMPHWcNZLPPzSoUyH1xNAcoHTKxO9OHW+1702yCJxulxfDZwMcn11fzDn/wcAAP//J7FLNQAAAAZJREFUAwD2YKR+IG7M4wAAAABJRU5ErkJggg==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+
+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
+
+--NEXT.ITEM-BOUNDARY--

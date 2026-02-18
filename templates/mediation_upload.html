@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mt-4">
+
+    <div class="col-md-3 mb-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary text-white fw-bold py-3">
+                ⚖️ 调解服务大厅
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="/mediation/apply" class="list-group-item list-group-item-action py-3 d-flex justify-content-between align-items-center">
+                    快速调解入口
+                    <span class="badge bg-danger rounded-pill">Hot</span>
+                </a>
+                <a href="/mediation/status" class="list-group-item list-group-item-action py-3">
+                    纠纷调解进度查询
+                </a>
+                <a href="/mediation/upload" class="list-group-item list-group-item-action py-3 sidebar-active">
+                    录像/录音上传
+                </a>
+                <a href="/mediation/download" class="list-group-item list-group-item-action py-3">
+                    录像/录音下载
+                </a>
+                <a href="/mediation/hotline" class="list-group-item list-group-item-action py-3 text-muted">
+                    <small>24小时人工热线</small>
+                </a>
+            </div>
+        </div>
+        
+        <div class="alert alert-info mt-3 shadow-sm border-0 small">
+            <i class="bi bi-info-circle-fill"></i> 提示：
+            上传录音录像前，请确保文件格式为 MP3 或 MP4，大小不超过 500M。
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <div class="card shadow border-0">
+            <div class="card-header bg-white border-bottom py-3 d-flex justify-content-between align-items-center">
+                <h4 class="fw-bold text-primary mb-0">📹 录音录像取证上传</h4>
+                <a href="/mediation" class="btn btn-outline-secondary btn-sm">
+                    &lt; 返回专家列表
+                </a>
+            </div>
+            <div class="card-body p-5">
+                
+                <form action="/mediation/upload/submit" method="post" enctype="multipart/form-data">
+                    
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">选择文件 <span class="text-danger">*</span></label>
+                        <input type="file" name="file" class="form-control form-control-lg" accept="audio/*,video/*" required>
+                        <div class="form-text text-muted">
+                            请上传与纠纷相关的现场录音或监控录像文件。
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="form-label fw-bold">验证码 <span class="text-danger">*</span></label>
+                        <div class="d-flex align-items-center">
+                            <input type="text" name="captcha_input" class="form-control form-control-lg me-3" style="width: 150px;" placeholder="不分大小写" required>
+                            
+                            <input type="hidden" name="captcha_id" id="captcha_id_field">
+                            
+                            <div style="cursor: pointer;" onclick="refreshCaptcha()" title="点击更换">
+                                <img id="captcha_img" src="" alt="加载中..." style="height: 50px; border: 1px solid #ccc; border-radius: 4px;">
+                            </div>
+                            <small class="text-muted ms-2 user-select-none" onclick="refreshCaptcha()" style="cursor: pointer;">看不清？换一张</small>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg py-3">确认上传文件</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* 侧边栏选中样式 */
+    .sidebar-active {
+        background-color: #fff !important;
+        color: #0d6efd !important;
+        font-weight: bold;
+        border-left: 5px solid #0d6efd !important;
+        padding-left: 15px !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+</style>
+
+<script>
+    // 生成随机 ID
+    function generateUUID() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }
+
+    // 刷新验证码
+    function refreshCaptcha() {
+        var oldId = document.getElementById('captcha_id_field').value;
+        var newId = generateUUID();
+        document.getElementById('captcha_id_field').value = newId;
+
+        var imgUrl = "/mediation/captcha/" + newId + "?old_uid=" + oldId + "&t=" + new Date().getTime();
+        document.getElementById('captcha_img').src = imgUrl;
+    }
+
+    // 页面加载完成后自动刷新一次
+    window.onload = function() {
+        refreshCaptcha();
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,455 @@
+Mime-Version: 1.0
+Content-Base: https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/bgtwj/202401/t20240105_2337614.shtml
+Content-Type: Multipart/related; boundary="NEXT.ITEM-BOUNDARY";type="text/html"
+
+--NEXT.ITEM-BOUNDARY
+Content-Type: text/html; charset="utf-8"
+Content-Location: https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/bgtwj/202401/t20240105_2337614.shtml
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+</style>
+</head>
+<body>
+            <!-- 文章正文 -->
+            <div class="articleWrapper" osize="18">
+                <div class="articleHead" osize="18">
+                    <h2 osize="36">
+                        市人民政府办公厅关于印发武汉市低效用地再开发试点工作实施方案的通知
+                    </h2>
+                    <div class="articleInfo" osize="18">
+                        <ul osize="18">
+                            <li osize="14">索引号：
+                                K28044908/2024-01288
+                            </li>
+                            <li osize="14">发文机构：
+                                武汉市人民政府办公厅
+                            </li>
+                            <li osize="14">发文字号：
+                                武政办〔2023〕121号
+                            </li>
+                            <li osize="14">主题分类：
+                                土地
+                            </li>
+                            <li osize="14">成文日期：
+                                2023年12月31日
+                            </li>
+                            <li osize="14">发布日期：
+                                2024年01月05日
+                            </li>
+                            <script osize="18">
+                                //如果文件是指定文件，则写成“执行时限截至：2020年12月31日”
+                                if ("K28044908/2020-883700" == "K28044908/2024-01288") {
+                                    document.writeln("<li>执行时限截至：2020年12月31日</li>");
+                                } else {
+                                    var Effectivestate = "有效";
+                                    if (Effectivestate != "" && Effectivestate != "3") {
+                                        document.writeln("<li>有效性：" + Effectivestate + "</li>");
+                                    }
+                                }
+                            </script><li osize="14">有效性：有效</li>
+
+                        </ul>
+                    </div>
+                    <!-- ai输出 -->
+                    <div class="ai_content" osize="16">
+                        <div class="close_btn" osize="16"></div>
+                        <div class="ai_output" osize="16"></div>
+                    </div>
+                    <script osize="18">
+                        //
+                        let aiOpShow = false
+                        let aiOpRunning = false;
+                        let aiData = '';
+                        $('.ai_btn').click(function (e) {
+                            if (aiOpRunning) {
+                                return false;
+                            }
+                            aiOpRunning = true;
+                            //
+                            if (aiOpShow) {
+                                _changeOpHide();
+                            } else {
+                                _changeOpShow();
+                            }
+                        })
+                        function _changeOpShow() {
+                            aiOpShow = true;
+                            $('.ai_output').removeClass("hide");
+                            $('.ai_content').show();
+                            setTimeout(() => {
+                                if (aiData.length == 0) {
+                                    _doAiExe();
+                                } else {
+                                    _onAiData(aiData);
+                                }
+                                aiOpRunning = false;
+                            }, 200);
+                        }
+                        function _changeOpHide() {
+                            aiOpShow = false;
+                            $('.ai_output').empty();
+                            $('.ai_output').addClass("hide");
+                            $('.ai_content').slideUp();
+                            aiOpRunning = false;
+                        }
+
+                        function _onAiData(data) {
+                            aiData = data;
+                            $('.ai_output').empty();
+                            $('.ai_output').append(data);
+                        }
+
+                        function _onAiError() {
+                            $('.ai_output').empty();
+                            $('.ai_output').append('<div></div>');
+                        }
+
+                        function _doAiExe() {
+                            let _did = "K28044908/2024-01288";
+                            let _html = $('.trs_editor_view').html();
+                            $.ajax({
+                                url: 'https://api.jp.cjn.cn/ai/wuhan/policy',
+                                type: "post",
+                                data: {
+                                    docId: _did,
+                                    content: _html,
+                                },
+                                timeout: 120000,
+                                success: function (data) {
+                                    _onAiData(marked.parse(data.data));
+                                },
+                                error: function () {
+                                    _onAiError();
+                                }
+                            });
+                        }
+
+                        $('.close_btn').on('click', function () {
+                            _changeOpHide();
+                        })
+                    </script>
+                    <!-- 正文内容 -->
+                    <div class="article no_border" osize="18">
+                        <div class="TRS_Editor" osize="18">
+                            <style type="text/css" osize="18">
+                                .TRS_Editor P {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor DIV {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor TD {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor TH {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor SPAN {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor FONT {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor UL {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor LI {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+
+                                .TRS_Editor A {
+                                    line-height: 1.5;
+                                    font-family: 宋体;
+                                    font-size: 12pt;
+                                }
+                            </style>
+                            <div class="TRS_Editor" osize="16">
+                                <div osize="16">
+                                    <!-- 附件中的图片放前面显示 -->
+                                    <div class="tp" id="articleTP" name="articleTP" style="display: none" osize="16">
+    <ul osize="16">
+        
+    </ul>
+</div>
+<script osize="16">
+    var PIC = "";
+    if (PIC != null && PIC != '') {
+        var tp = document.getElementById('articleTP');
+        if(tp!=null){
+            tp.style.display = "block";
+        }
+    }
+</script>
+                                    <div class="trs_editor_view TRS_UEDITOR trs_paper_default trs_web" osize="16"><p style="text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em; text-indent: 0em;" osize="18">各区人民政府，市人民政府各部门：</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">《武汉市低效用地再开发试点工作实施方案》已经市人民政府同意，现印发给你们，请认真组织实施。</p><p style="text-align: right; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em; text-indent: 0em;" osize="18">武汉市人民政府办公厅</p><p style="text-align: right; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em; text-indent: 0em;" osize="18">2023年12月31日</p><p style="text-align: center; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em; text-indent: 0em;" osize="18"><strong osize="18"><br osize="18"></strong></p><p style="text-align: center; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em; text-indent: 0em;" osize="18"><strong osize="18">武汉市低效用地再开发试点工作实施方案</strong></p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">在武汉等43个城市开展低效用地再开发试点，是自然资源部为贯彻党中央、国务院关于实施全面节约战略等决策部署，落实在超大特大城市积极稳步推进城中村改造的有关要求，盘活利用存量土地提高土地利用效率所作出的重要部署。为高标准高质量高效率推进这项试点，结合我市实际，特制订本方案。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18"><strong osize="18">一、总体要求</strong></p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（一）指导思想</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">坚持以习近平新时代中国特色社会主义思想为指导，全面贯彻落实党的二十大精神和习近平总书记考察湖北武汉重要讲话精神，完整准确全面贯彻新发展理念，以国土空间规划为统领，以城市更新和城中村、低效工业用地改造为重点，以政策创新为支撑，按照“规划引导、成片推进”的思路，兼顾经济、生活、生态、安全等多元需要，深入推进各类低效用地再开发，推动全市土地节约集约利用，加快转变超大城市发展方式，助力武汉经济社会高质量发展。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（二）试点范围</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">按照“局部试点、全面探索、封闭运行、结果可控”原则，对布局散乱、利用粗放，用途功能不合理，设施落后、环境差乱等低效用地，分类型开展低效用地再开发试点工作。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">中心城区：重点围绕城市更新重点片区改造提升，工业园区再利用再提升，剩余旧村的城中村改造和已改造城中村存在的历史遗留问题，以及其他成片低效用地实施再开发。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">新城区和功能区：重点围绕工业园区低效用地盘活利用，加快实施批而未供用地处置，符合条件的旧村实施城中村改造，以及其他成片低效用地实施再开发。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（三）工作目标</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">到2027年，全面推进21项改革试点任务，探索形成低效用地再开发武汉模式，建成一批精品示范项目，总结形成一系列专项支撑制度性文件，土地利用效益与效率进一步提高，城市功能和品质进一步提升，市民群众获得感、幸福感、安全感进一步增强。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18"><strong osize="18">二、重点任务</strong></p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（一）规划统筹</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">1．加强规划统领。健全规划衔接协调机制，在统筹衔接城市更新等专项规划基础上，组织编制低效用地再开发专项规划，明确目标和任务，划定低效用地再开发重点区域和空间单元。编制各类低效用地再开发空间单元实施详细规划，按程序批准后，作为核发规划许可的法定依据。（牵头单位：市自然资源和规划局；责任单位：各区人民政府〈含开发区、长江新区、风景区管委会，下同〉，市房管局、市发改委、市经信局、市商务局、市城建局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">2．引导有序实施。根据专项规划和单元实施详细规划，各区按照整体统筹、成片推进的要求，谋划实施项目，制订实施方案，明确改造主体，深化资金筹措和改造阶段安排，并结合辖区重大项目建设、招商引资等实际情况，制订年度实施计划，明确年度改造规模、资金投入等，做好各类计划统筹衔接。（责任单位：各区人民政府，市房管局、市自然资源和规划局、市发改委、市经信局、市商务局、市城建局、市卫健委、市园林林业局、市教育局、市财政局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">3．完善规划激励。在符合规划和用途管制前提下，探索建立“市—区—单元”规划统筹平衡机制，探索在市域内综合统筹平衡、区内跨空间单元统筹平衡规划指标，在规划用地性质、建筑规模等方面对改造项目予以支持。完善容积率奖励政策，鼓励改造主体参与公共空间、公益设施建设和提供公共服务，推动形成规划管控与市场激励良性互动的机制。（牵头单位：市自然资源和规划局；责任单位：各区人民政府，市发改委、市城建局、市卫健委、市园林林业局、市教育局、市财政局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（二）收储支撑</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">4．完善改造模式。结合经济社会发展要求、规划实施需要以及改造项目实际，深化区片统筹、整体推进，鼓励政府收储、政府平台机构收购整合再开发，探索自主改造、政企合作、企企合作及连片开发、统招统租、整治提升等方式，因地制宜推进低效用地再开发、再利用。拓展储备内涵，探索将园地、林地等纳入储备范围，发展“留改”项目不动产储备供应运营新模式。（责任单位：各区人民政府，市房管局、市自然资源h规划局、市财政局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">5．推进成片改造。探索在符合规划和用途管制前提下，推进集中成片低效工业用地整体转型，通过存量补地价方式完善用地手续后使用，但不得用于商品住宅开发。改造范围内无法单独出具规划条件的“边角地”“夹心地”“插花地”，或难以独立开发的零星建设用地，按照规定经批准可与邻宗土地一并开发。（责任单位：各区人民政府，市自然资源和规划局、市财政局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">6．拓宽资金渠道。完善国有土地收益基金管理制度，结合土地储备需求合理确定计提比例，强化资金支撑。探索用地、财税、金融等政策有机融合，在统筹用好土地收益基金、城建资金、农田水利建设资金等资金基础上，积极争取城中村、国土综合整治、生态修复等有关政策性资金，推动片区税收地方留存部分优先用于基础设施建设。在风险可控、可持续的前提下，探索通过成立专项资金、发行专项债、寻求银行信贷支持等方式，依法拓宽改造资金的来源渠道，解决筹融资难的问题。（牵头单位：市财政局；责任单位：各区人民政府，市城建局、市发改委、市地方金融局、市自然资源和规划局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">7．完善征收补偿。各区根据《武汉市集体土地征收补偿安置办法》规定，结合实际出台征收补偿安置实施细则，完善货币补偿标准，探索“房票”安置、还建产业指标台帐管理、农林生态资源丰富的城中村利用农用地或者生态用地进行产业安置等，拓展补偿安置的途径，加快推进土地征收工作。完善低效用地再开发中土地征收的具体办法，对于纳入规划的“平急两用”公共基础设施项目，可以按照公益性用地实施土地征收，完善低效用地再开发中土地征收成片开发标准，依据国土空间规划合理确定土地征收成片开发规模以及公益性用地比例。（责任单位：各区人民政府，市自然资源和规划局、市房管局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（三）政策激励</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">8．探索“绿中村”改造新路径。在鼓架村等跨城镇开发边界的“绿中村”，探索结合全域国土综合整治落实“三区三线”推进生态整治改造新模式。在完成自然资源统一收储及确权登记后，探索自然资源资产组合供应，依据规划将多门类全民所有自然资源资产组合供应给同一使用权人。依托现有土地交易平台，拓展自然资源资产交易工作，强化资源资产组合推介，规范交易流程，提高社会公开水平。（牵头单位：市自然资源和规划局；责任单位：市发改委、市财政局、市农业农村局、市园林林业局、市生态环境局、市文旅局、市乡村振兴局、市司法局，各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">9．增加保障性住房用地供应。探索城中村改造地块除安置房外的住宅用地及建筑规模按照一定比例建设保障性住房，支持利用闲置低效工业、商业、办公等非住宅用地建设保障性住房。支持利用集体经营性建设用地建设保障性租赁住房，支持利用还建产业用地建设租赁住房。（牵头单位：市房管局、市自然资源和规划局；责任单位：各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">10．推进保留建筑盘活利用。对改造中涉及的文物保护建筑、优秀历史建筑及其他按照规划需要保留建筑，完善产权归集制度，探索留改新路径，实现科学保护、活化利用。探索存量保留建筑实施用途转换和兼容使用的条件和规则，完善相关审批事项办理程序，支持商业用房、办公用房去库存以及存量工业用房盘活利用。鼓励利用存量房产等空间资源支持重点产业和行业发展，允许享受最长5年的不改变用地主体和规划条件的过渡期支持政策，过渡期满后依法经批准后可按协议方式办理供地。（牵头单位：市自然资源和规划局、市房管局、市文旅局；责任单位：市城建局、市园林林业局、市税务局、市城管执法委，各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">11．促进工业用地转型升级。在稳定工业园区内工业用地总量的前提下，完善“工改新”“工业上楼”政策，探索建立“工改工”与“工改商”“工改住”等不同类型改造项目联动改造机制，积极推动低效工业用地改造。探索存量工业物业产权分割转让，完善分割转让的条件和程序，推进存量工业盘活利用。完善工业企业集约高效综合评价体系，在不突破最低价标准和成本价前提下，探索产业项目“控地价、竞税收”等综合评价出让，探索产业用地的成本价（租）采取片区内不同用途土地面积或者土地价格占比分摊计算。（牵头单位：市自然资源和规划局；责任单位：市经信局、市发改委、市税务局、市财政局、市商务局，各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">12．稳步推进集体经营性建设用地入市试点。在蔡甸区和黄陂区等集体经营性建设用地入市试点区探索就地入市、整治入市等多元入市模式，完善入市程序、市场交易规则和服务监督制度，建立公平合理的土地增值收益分配机制。（牵头单位：各相关区人民政府；责任单位：市自然资源和规划局、市农业农村局、市乡村振兴局、市财政局、市地方金融局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">13．鼓励土地立体开发混合利用。推进建设用地地上、地表、地下分层设立使用权，完善地上、地下空间的供应方式、供应价格等土地利用政策，鼓励土地立体开发。探索用地功能兼容与建筑复合利用，明确用途转换和兼容使用正负面清单、比例管控、供应方式等政策要求，推进土地混合利用。（牵头单位：市自然资源和规划局；责任单位：市发改委、市经信局、市房管局、市城建局，各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">14．优化改造程序。明确原土地使用权人改造开发的范围和情形，除法律规定不可改变土地用途或者改变土地用途应当由政府收回外，支持留改项目以及土地储备机构不予收储的存量建设用地按照规划用途自行或者转让开发，简化原土地使用权人申请改变土地用途、签订变更协议的办理程序，鼓励原土地使用权人改造开发。对于未完成开发投资总额25%以上的出让土地，实施预告登记转让制度，积极推动闲置低效用地盘活利用。（牵头单位：市自然资源和规划局、市房管局；责任单位：各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">15．拓展供应规则。在符合国土空间规划、用途管制要求和公平竞争的前提下，探索将公益性基础设施及配建产业项目涉及的设施配备、交付、使用、运营等内容一并纳入供地条件；探索位于重点功能区范围或者重要交通枢纽节点的改造项目带设计方案出让。推进“用地清单制”，将区域评估和现状普查等成果归集，形成用地清单，在土地供应时一并交付用地单位，项目在后续报建环节，原则上不增加清单外的事项。探索市属国企的部分国有划拨土地经批准后，依法依规采取作价出资等方式盘活存量用地。（牵头单位：市自然资源和规划局、市城建局、市财政局、市政府国资委；责任单位：各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">16．降低改造成本。对于城中村改造涉及的还建产业用地以及原土地使用权人采取自主、联营、入股、转让等多种方式实施改造的，探索建立分区、分类型低效用地再开发地价计收标准，以公示地价或市场评估价的一定比例核定补缴地价款，并探索以市场评估价为基础，综合考虑土地整理投入以及移交、改造等成本，确定地价款。先行探索完善“工改工”“工改平急两用”“工改保障性住房”不再增缴土地价款的细分用途和条件，成熟后探索拓展至低效工业用地再开发其他情形。（牵头单位：市财政局、市自然资源和规划局；责任单位：各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">17．探索置换政策。对于低效用地再开发中存量国有建设用地，鼓励按照价值对等、差价互补的原则，以协议置换方式向原土地使用权人重新配置土地，置换后土地用途按规划用途确定。按照“面积相近或价值相当、双方自愿、凭证置换”原则，对于采用整治提升等方式改造的“城中村”，以及工业园区内批而未供涉及“边角地”“夹心地”“插花地”等零星低效用地，探索集体建设用地之间、集体建设用地与国有建设用地之间的置换路径。（牵头单位：市自然资源和规划局；责任单位：各区人民政府）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（四）基础保障</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">18．调查认定和上图入库。建立全市分区分类型低效用地认定标准以及动态调整机制。在第三次全国国土调查及最新年度国土变更调查成果的基础上，全面查清低效用地底数，重点针对城镇开发边界内的城中村、工业园区、城市更新改造单元等开展资源盘整，全部实现上图入库，按规定程序上报并纳入国土空间规划“一张图”实施监督信息系统。（责任单位：各区人民政府，市自然资源和规划局、市房管局、市发改委、市经信局、市统计局、市税务局、市政务服务大数据局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">19．做好不动产登记。强化地籍调查和不动产登记工作，确保纳入低效用地再开发范围内用地权属清晰、主体明确。完善耕地、林地、草地等土地承包经营权、土地经营权，以及规划保留建筑不动产登记规则，维护权利人合法权益。（责任单位：各区人民政府，市自然资源和规划局、市农业农村局、市园林林业局、市房管局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">20．完善公示地价体系。按要求及时更新国有建设用地基准地价和标定地价，组织编制集体建设用地基准地价、农用地基准地价、园林草地基准地价，夯实自然资源资产管理基础。（责任单位：各区人民政府，市自然资源和规划局）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">21．妥善处理历史遗留问题。对于历史形成且未取得合法用地手续的建设用地，依据上级文件精神，依法依规分类明确认定标准和处置政策，各区妥善处理拆违控违工作。对第二次全国土地调查和第三次全国国土调查均认定为建设用地的，在符合规划用途的前提下，允许按建设用地办理土地征收等手续，按现行《土地管理法》规定落实征地补偿安置；对其地上建筑物、构筑物，不符合规划要求、违反《城乡规划法》相关规定的，依法依规予以处置。（责任单位：各区人民政府，市自然资源和规划局、市城管执法委）</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18"><strong osize="18">三、实施步骤</strong></p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（一）启动实施（2023年9月—2025年6月）。细化试点目标、重点任务、保障措施等内容。组织开展存量建设用地资源摸底、现状评估、低效用地标准认定、标图建库等具体工作，2024年3月底经省自然资源主管部门审核同意报自然资源部备案。组织编制规划，明确试点对象，推进试点项目实施，针对项目实施中的重点、难点开展创新性政策研究。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（二）深化提升（2025年7月—2027年6月）。组织对试点工作进行中期评估，结合发现的问题和短板，制订改进措施，提出制度建设、政策创新等方面意见建议。持续推进试点探索，深入开展专题调研，落实“政策创新点”，形成理论和实践成果。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（三）总结评估（2027年7—9月）。开展试点总结工作，总结试点做法和经验，归纳提炼可复制、可推广的政策建议，形成试点总结评估报告，按程序上报备案。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18"><strong osize="18">四、保障措施</strong></p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（一）加强组织领导。成立由市政府分管副市长任组长，市政府分管副秘书长、市自然资源和规划局局长任副组长，各区、各相关部门和单位负责人为成员的市低效用地再开发试点工作专班（以下简称工作专班），负责统筹研究全市低效用地再开发工作中的重大事项和重点问题。工作专班下设办公室，在市自然资源和规划局办公，承担具体研判调度、通报监督、考核评价、风险防控等工作，加强对试点工作的跟踪指导，工作专班和专班办公室在试点阶段性任务完成后自动撤销。各区要建立相应工作机制，各相关部门和单位要解放思想、统筹资源、优化服务、创新机制，合力推进试点工作有序实施。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（二）强化保障支持。各相关部门和单位要将试点工作经费列入部门预算，财政部门加大对试点工作的经费保障。邀请国内规划、用地、财税、金融等领域知名专家，组建全市低效用地再开发工作智囊团，加强专业指导把关。基于国土空间基础信息平台，建设低效用地开发利用管理主题数据库，夯实低效用地开发利用全生命周期空间数据管理基础。运用知识图谱、人工智能等技术，开发智慧工具，实现智能化、数字化监测。</p><p style="text-indent: 2em; text-align: left; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px; margin-top: 5px; margin-bottom: 5px; line-height: 2em;" osize="18">（三）做好宣传引导。通过广播电视、报刊杂志、互联网等途径广泛宣传试点的重要意义和工作内容，提高低效用地再开发试点工作的公开性和透明度，切实保障群众的知情权、参与权、监督权，畅通信息反馈渠道，妥善处理群众合理诉求，为全市推进低效用地再开发试点工作营造良好的社会氛围。　　　　</p></div>
+                                    <p style="text-align: right;" osize="16">　　</p>
+                                </div>
+                            </div>
+                            <div class="shareWrapper clear" osize="16">
+                                <span class="interactive" osize="16" style="display: none;">
+                                    <span class="print" onclick="javascript:window.print()" osize="16">【&nbsp;打印&nbsp;】</span>
+                                    <span class="download print" osize="16">【&nbsp;下载&nbsp;】</span><span class="scan print" osize="16">
+                                        <a href="javascript:;" osize="16">【&nbsp;扫一扫&nbsp;】
+                                            <div class="code-img" id="qrcodeCanvas" osize="16">
+                                                <script osize="16">
+                                                    jQuery('#qrcodeCanvas').qrcode(document.location.href);
+                                                </script><canvas width="256" height="256" osize="16"></canvas>
+                                            </div>
+                                        </a>
+                                    </span>
+                                    <span class="print" onclick="AddFavorite()" osize="16">【&nbsp;收藏&nbsp;】</span>
+                                    <div class="share" osize="16">
+                                        <link rel="stylesheet" href="../../../../../material/css/share.min.css" osize="16">
+ <ul osize="16">
+  <li class="row" osize="16">
+   <div id="share-2" class="share-component social-share" osize="16"><a class="social-share-icon icon-wechat" href="javascript:;" tabindex="-1" osize="20"><div class="wechat-qrcode" osize="12"><h4 osize="12">微信扫一扫：分享</h4><div class="qrcode" osize="16"><img src="data:image/png;base64,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" osize="16" width="100" height="100"></div><div class="help" osize="16"><p osize="16">微信里点“发现”，扫一下</p><p osize="16">二维码便可将本文分享至朋友圈。</p></div></div></a><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https%3A%2F%2Fwww.wuhan.gov.cn%2Fzwgk%2Fxxgk%2Fzfwj%2Fbgtwj%2F202401%2Ft20240105_2337614.shtml&amp;title=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BD%8E%E6%95%88%E7%94%A8%E5%9C%B0%E5%86%8D%E5%BC%80%E5%8F%91%E8%AF%95%E7%82%B9%E5%B7%A5%E4%BD%9C%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%E7%9A%84%E9%80%9A%E7%9F%A5&amp;desc=%E5%90%84%E5%8C%BA%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%EF%BC%8C%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%90%84%E9%83%A8%E9%97%A8%EF%BC%9A%E3%80%8A%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BD%8E%E6%95%88%E7%94%A8%E5%9C%B0%E5%86%8D%E5%BC%80%E5%8F%91%E8%AF%95%E7%82%B9%E5%B7%A5%E4%BD%9C%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%E3%80%8B%E5%B7%B2%E7%BB%8F%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%90%8C%E6%84%8F%EF%BC%8C%E7%8E%B0%E5%8D%B0...&amp;summary=%E5%90%84%E5%8C%BA%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%EF%BC%8C%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%90%84%E9%83%A8%E9%97%A8%EF%BC%9A%E3%80%8A%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BD%8E%E6%95%88%E7%94%A8%E5%9C%B0%E5%86%8D%E5%BC%80%E5%8F%91%E8%AF%95%E7%82%B9%E5%B7%A5%E4%BD%9C%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%E3%80%8B%E5%B7%B2%E7%BB%8F%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%90%8C%E6%84%8F%EF%BC%8C%E7%8E%B0%E5%8D%B0...&amp;site=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BD%8E%E6%95%88%E7%94%A8%E5%9C%B0%E5%86%8D%E5%BC%80%E5%8F%91%E8%AF%95%E7%82%B9%E5%B7%A5%E4%BD%9C%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%E7%9A%84%E9%80%9A%E7%9F%A5%20-%20%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&amp;pics=https%3A%2F%2Fwww.wuhan.gov.cn%2Fmaterial%2Fwxshare%2Fwx-share-icon.jpg" target="_blank" osize="20"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Fwww.wuhan.gov.cn%2Fzwgk%2Fxxgk%2Fzfwj%2Fbgtwj%2F202401%2Ft20240105_2337614.shtml&amp;title=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BD%8E%E6%95%88%E7%94%A8%E5%9C%B0%E5%86%8D%E5%BC%80%E5%8F%91%E8%AF%95%E7%82%B9%E5%B7%A5%E4%BD%9C%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%E7%9A%84%E9%80%9A%E7%9F%A5&amp;source=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BD%8E%E6%95%88%E7%94%A8%E5%9C%B0%E5%86%8D%E5%BC%80%E5%8F%91%E8%AF%95%E7%82%B9%E5%B7%A5%E4%BD%9C%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%E7%9A%84%E9%80%9A%E7%9F%A5%20-%20%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99&amp;desc=%E5%90%84%E5%8C%BA%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%EF%BC%8C%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%90%84%E9%83%A8%E9%97%A8%EF%BC%9A%E3%80%8A%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BD%8E%E6%95%88%E7%94%A8%E5%9C%B0%E5%86%8D%E5%BC%80%E5%8F%91%E8%AF%95%E7%82%B9%E5%B7%A5%E4%BD%9C%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%E3%80%8B%E5%B7%B2%E7%BB%8F%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%90%8C%E6%84%8F%EF%BC%8C%E7%8E%B0%E5%8D%B0...&amp;pics=https%3A%2F%2Fwww.wuhan.gov.cn%2Fmaterial%2Fwxshare%2Fwx-share-icon.jpg" target="_blank" osize="20"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fwww.wuhan.gov.cn%2Fzwgk%2Fxxgk%2Fzfwj%2Fbgtwj%2F202401%2Ft20240105_2337614.shtml&amp;title=%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%8A%9E%E5%85%AC%E5%8E%85%E5%85%B3%E4%BA%8E%E5%8D%B0%E5%8F%91%E6%AD%A6%E6%B1%89%E5%B8%82%E4%BD%8E%E6%95%88%E7%94%A8%E5%9C%B0%E5%86%8D%E5%BC%80%E5%8F%91%E8%AF%95%E7%82%B9%E5%B7%A5%E4%BD%9C%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88%E7%9A%84%E9%80%9A%E7%9F%A5&amp;pic=https%3A%2F%2Fwww.wuhan.gov.cn%2Fmaterial%2Fwxshare%2Fwx-share-icon.jpg&amp;appkey=" target="_blank" osize="20"></a></div>
+  </li>
+ </ul>
+ <script src="../../../../../material/js/jquery.share.min.js" osize="16"></script>
+ <script osize="16">
+//一键分享相关配置
+var $config = {
+      url: window.location.href,// 网址，默认使用 window.location.href
+      title: '市人民政府办公厅关于印发武汉市低效用地再开发试点工作实施方案的通知',
+      description: '各区人民政府，市人民政府各部门：《武汉市低效用地再开发试点工作实施方案》已经市人民政府同意，现印...',
+      image: 'https://www.wuhan.gov.cn/material/wxshare/wx-share-icon.jpg',
+      sites : ['wechat','qzone', 'qq', 'weibo'], // 启用的站点
+      wechatQrcodeTitle: '微信扫一扫：分享', // 微信二维码提示文字
+      wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>',
+      target : '_blank' //打开方式
+  };
+  $('#share-2').share($config);
+ </script>
+                                    </div>
+                                </span>
+                            </div>
+                            <!-- 文章二维码 -->
+<style osize="18">
+    .f-qrc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .f-qrc .fj-qrc {
+        display: grid;
+        margin-right: 12px;
+    }
+
+    .f-qrc .fj-qrc canvas {
+        height: 120px;
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .f-qrc .fj-wxgzh {
+        /* display: grid; */
+        display: none;
+        margin-left: 12px;
+    }
+
+    .f-qrc .fj-wxgzh .szfwxgzh {
+        height: 120px;
+        width: 120px;
+        background-image: url(http://www.wuhan.gov.cn/material/images/szfwxgzh.jpg);
+        background-size: 120px 120px;
+        margin: 0 auto;
+    }
+</style>
+<style osize="18">
+    .fj-icon {
+        width: 24px;
+        height: 24px;
+    }
+</style>
+<div class="f-qrc" osize="16">
+    <div class="fj-qrc" id="fj-qrc" osize="16">
+        <script osize="16">
+            var url = "https://www.wuhan.gov.cn/zwgk/xxgk/zfwj/bgtwj/202401/t20240105_2337614.shtml";
+            $('#fj-qrc').qrcode({
+                render: "canvas",
+                text: url
+            });　　
+        </script><canvas width="200" height="200" osize="16"></canvas>
+        <span style="margin-top: 12px;" osize="16">扫一扫在手机上查看当前页面</span>
+    </div>
+    <div class="fj-wxgzh" osize="16">
+        <span class="szfwxgzh" osize="16"></span>
+        <span style="margin-top: 12px;" osize="16">武汉市人民政府微信公众号</span>
+    </div>
+</div>
+<div class="article-footer" id="articleFJ" name="articleFJ" style="display: block;" osize="16">
+    <h2 class="f-tit" osize="20">附件：</h2>
+    <ul id="appendix_list" osize="16">
+        
+            <li osize="0">
+                <a href="./P020240105628626402514.pdf" osize="16">
+                    武政办〔2023〕121号—市人民政府办公厅关于印发武汉市低效用地再开发试点工作实施方案的通知.pdf
+                </a>
+            </li>
+        
+    </ul>
+    <div osize="16">
+        
+        
+        
+        
+
+    </div>
+</div>
+<script osize="18">
+    var XAPPENDIXS = "1";
+    if (XAPPENDIXS != null && XAPPENDIXS != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+    var wpsFile = "";
+    if (wpsFile != null && wpsFile != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+    var ofdFile = "";
+    if (ofdFile != null && ofdFile != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+    var pdfFile = "";
+    if (pdfFile != null && pdfFile != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+    var xgfj = "";
+    if (xgfj != null && xgfj != '') {
+        var fj = document.getElementById('articleFJ');
+        if (fj != null) {
+            fj.style.display = "block";
+        }
+    }
+</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 相关解读 -->
+<div class="abouts xgjd" id="articleXGJD" name="articleXGJD" style="display: block;" osize="12">
+    <div class="subTitle" osize="24">
+        <span osize="24">相关解读</span>
+    </div>
+    <ul osize="12">
+        
+            <li osize="12">
+                <a href="../../../zcjd/bmjd/202401/t20240115_2341921.shtml" target="_blank" title=" 【部门】《市人民政府办公厅关于印发武汉市低效用地再开发试点工作实施方案的通知》政策解读" osize="12">
+                    <span class="title" osize="18">
+                        【部门】《市人民政府办公厅关于印发武汉市低效用地再开发试点工作实施方案的通知》政策解读
+                    </span>
+                </a>
+                <span class="time fr" osize="16">
+                    2024-01-06</span>
+            </li>
+        
+    </ul>
+</div>
+
+<!-- 关联政策 -->
+<div class="abouts glzc" id="articleGLZC" name="articleGLZC" style="display: none" osize="12">
+    <div class="subTitle" osize="24">
+        <span osize="24">关联政策</span>
+    </div>
+    <ul osize="12">
+        
+    </ul>
+</div>
+
+<!-- 关联内容 -->
+<div class="abouts glnr" id="articleGLNR" name="articleGLNR" style="display: none" osize="12">
+    <div class="subTitle" osize="24">
+        <span osize="24">关联内容</span>
+    </div>
+    <ul osize="12">
+        
+    </ul>
+</div>
+
+<!-- 相关文章 -->
+<div class="abouts xgwz" id="articleXGWZ" name="articleXGWZ" style="display: none" osize="12">
+    <div class="subTitle" osize="24">
+        <span osize="24">相关文章</span>
+    </div>
+    <ul osize="12">
+        
+    </ul>
+</div>
+
+<script osize="12">
+    var PolicyInterpretation = "1";
+    if (PolicyInterpretation != null && PolicyInterpretation != '') {
+        var xgjd = document.getElementById('articleXGJD');
+                        if(xgjd!=null){
+                            xgjd.style.display = "block";
+                        }
+    }
+    var relatedpolicy = "";
+    if (relatedpolicy != null && relatedpolicy != '') {
+        var glzc = document.getElementById('articleGLZC');
+                        if(glzc!=null){
+                            glzc.style.display = "block";
+                        }
+    }
+    var DOCRELNEWS = "";
+    if (DOCRELNEWS != null && DOCRELNEWS != '') {
+        var glnr = document.getElementById('articleGLNR');
+                        if(glnr!=null){
+                            glnr.style.display = "block";
+                        }
+    }
+    var relatedarticles = "";
+    if (relatedarticles != null && relatedarticles != '') {
+        var xgwz = document.getElementById('articleXGWZ');
+                        if(xgwz!=null){
+                            xgwz.style.display = "block";
+                        }
+    }
+</script>
+        </body></html>
+--NEXT.ITEM-BOUNDARY
+Content-Location: data:image/png;base64,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
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+
+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
+
+--NEXT.ITEM-BOUNDARY--

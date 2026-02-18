@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mt-4">
+    
+    <div class="col-md-3 mb-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary text-white fw-bold py-3">
+                ⚖️ 调解服务大厅
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="/mediation/apply" class="list-group-item list-group-item-action py-3 d-flex justify-content-between align-items-center">
+                    快速调解入口
+                    <span class="badge bg-danger rounded-pill">Hot</span>
+                </a>
+                <a href="/mediation/status" class="list-group-item list-group-item-action py-3">
+                    纠纷调解进度查询
+                </a>
+                <a href="/mediation/upload" class="list-group-item list-group-item-action py-3">
+                    录像/录音上传
+                </a>
+                <a href="/mediation/download" class="list-group-item list-group-item-action py-3">
+                    录像/录音下载
+                </a>
+                <a href="/mediation/hotline" class="list-group-item list-group-item-action py-3">
+                    24小时人工热线
+                </a>
+            </div>
+        </div>
+        
+        <div class="alert alert-info mt-3 shadow-sm border-0 small">
+            <i class="bi bi-info-circle-fill"></i> 提示：
+            上传录音录像前，请确保文件格式为 MP3 或 MP4，大小不超过 500M。
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+            <h3 class="fw-bold text-dark">
+                <span class="text-primary border-start border-4 border-primary ps-3">专家调解团队</span>
+            </h3>
+        </div>
+
+        <div class="row">
+            {% for m in mediators %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm border-0 h-100 hover-card">
+                    <div class="position-relative" style="height: 305px; overflow: hidden;">
+                        <img src="{{ m.image }}" class="card-img-top" alt="{{ m.name }}" style="object-fit: cover; object-position: top; height: 100%; width: 100%;">
+                        <div class="position-absolute top-0 end-0 m-2">
+                            <span class="badge bg-success shadow">
+                                调解成功率 {{ m.rate }}
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-dark">{{ m.name }}</h5>
+                        <p class="card-text text-muted small mb-2">
+                            <span class="badge bg-light text-dark border">擅长</span> {{ m.field }}
+                        </p>
+                        <p class="card-text text-secondary small mt-3">
+                            {{ m.description }}
+                        </p>
+                        <a href="/mediation/book?mediator={{ m.name }}" class="btn btn-primary btn-sm w-100 mt-2">
+                            预约调解
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm border-0 h-100 bg-light d-flex align-items-center justify-content-center text-center p-4 dashed-border">
+                    <div class="text-muted">
+                        <h1 class="display-4 text-secondary">+</h1>
+                        <p>更多专业律师<br>持续加入中...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* 简单的悬停动效，增加现代感 */
+    .hover-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hover-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+    /* 虚线边框 */
+    .dashed-border {
+        border: 2px dashed #dee2e6 !important;
+    }
+</style>
+{% endblock %}

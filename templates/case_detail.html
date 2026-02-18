@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/case">案例检索</a></li>
+            <li class="breadcrumb-item active" aria-current="page">案例详情</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="card shadow-sm border-0 p-5 mb-5 paper-texture">
+                {% if case.subtitle %}
+                <h2 class="text-center fw-bold mb-2" style="font-family: 'SimHei'">{{ case.title }}</h2>
+                <div class="text-center mb-4" style="font-family: '楷体', serif; font-size: 24px; color: #000;">
+                    {{ case.subtitle }}
+                </div>
+                {% else %}
+                <h2 class="text-center fw-bold mb-4" style="font-family: 'SimHei'">{{ case.title }}</h2>
+                {% endif %}
+                
+                <div class="text-center text-muted mb-4 pb-3 border-bottom">
+                    <span class="me-3">📌 案号：{{ case.case_no }}</span>
+                    <span class="me-3">📂 分类：{{ category }}</span>
+                </div>
+
+                <div class="case-content">
+                    {{ case.content | safe }}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="card shadow-sm border-0 mb-3">
+                <div class="card-header bg-white fw-bold">🏷️ 关键词</div>
+                <div class="card-body">
+                    {% for keyword in case.keywords %}
+                        <span class="badge bg-primary mb-2 p-2">{{ keyword }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <h6 class="card-title text-muted mb-3">需要原始文件？</h6>
+                    <a href="/case/dl/{{ category }}/{{ case.filename }}" class="btn btn-outline-danger w-100">
+                        <i class="bi bi-file-earmark-pdf"></i> 下载 PDF 原文
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* 容器调整：确保内容区域与其内部元素协调 */
+    .case-content {
+        color: #000; /* 确保文字够黑，模拟打印效果 */
+    }
+
+    /* 标题样式：对应图中的“基本案情” */
+    .case-content h3 {
+        font-family: "SimHei", "黑体", sans-serif; /* 使用黑体 */
+        font-size: 22px;       /* 标题字号稍大 */
+        font-weight: 700;      /* 加粗 */
+        color: #000000;        /* 纯黑色 */
+        margin-top: 30px;      /* 保持段前间距 */
+        margin-bottom: 15px;   /* 保持段后间距 */
+        text-align: left;      /* 左对齐 */
+        border: none;          /* 去掉原来的蓝色边框 */
+        padding-left: 0;       /* 去掉原来的左内边距 */
+    }
+
+    /* 正文样式：对应图中的案情描述 */
+    .case-content p {
+        font-family: "FangSong", "仿宋", "SimSun", "宋体", serif; /* 优先使用仿宋，其次宋体 */
+        font-size: 18px;       /* 适合阅读的字号 */
+        line-height: 1.8;      /* 1.8倍行高，类似公文标准 */
+        text-indent: 2em;      /* 首行缩进2字符 */
+        margin-bottom: 10px;   /* 段落间距 */
+        text-align: justify;   /* 两端对齐，使右侧边缘整齐 */
+        letter-spacing: 0.5px; /* 稍微增加字间距，提升可读性 */
+        color: #222;           /* 深灰色接近黑色 */
+    }
+</style>
+{% endblock %}

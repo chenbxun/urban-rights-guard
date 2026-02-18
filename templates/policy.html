@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+
+        <div class="text-center mb-5 mt-4">
+            <h2 class="fw-bold text-primary">城中村改造政策权威公示专区</h2>
+            <p class="text-muted">同步武汉、江苏最新政策文件 | 实时更新 | 权威发布</p>
+        </div>
+
+        <div class="d-flex justify-content-center mb-4">
+            <div class="btn-group" role="group">
+                <a href="/policy?region=武汉" class="btn btn-outline-primary {% if current_region == '武汉' %}active{% endif %}">
+                    武汉地区政策
+                </a>
+                <a href="/policy?region=江苏" class="btn btn-outline-primary {% if current_region == '江苏' %}active{% endif %}">
+                    江苏地区政策
+                </a>
+            </div>
+        </div>
+
+        {% for item in results %}
+        <div class="card shadow-sm mb-4 border-0 border-start border-primary border-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold text-dark mb-0">{{ item.title }}</h5>
+                    <span class="badge bg-secondary">{{ current_region }}</span>
+                </div>
+                <p class="text-muted mb-3" style="font-size: 0.95rem;">
+                    <strong>预览：</strong>{{ item.summary }}
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="small text-secondary">
+                        <span>🏛️ {{ item.source }}</span>
+                        <span class="ms-3">📅 {{ item.date }}</span>
+                    </div>
+                    <a href="/policy/{{ current_region }}/{{ item.filename }}" class="btn btn-outline-primary btn-sm">
+                        📄 下载/阅读原件
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary btn-lg rounded-circle shadow" id="btn-back-to-top" 
+    style="position: fixed; bottom: 40px; right: 40px; display: none; z-index: 1000; width: 60px; height: 60px;">
+    ↑
+</button>
+
+<script>
+    // 获取按钮
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // 当用户向下滚动 20px 时，显示按钮
+    window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    // 当点击按钮时，滚动到文档顶部
+    mybutton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+{% endblock %}

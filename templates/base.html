@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>城市新市民权益保护平台</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <style>
+        /* 简单自定义一点样式 */
+        body { background-color: #f8f9fa; }
+        .navbar { box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .footer { margin-top: 50px; padding: 20px; text-align: center; color: #666; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">🛡️ 城市失地新市民权益保护</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_tab == 'law' %}active fw-bold{% endif %}" href="/">
+                            法规检索
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_tab == 'mediation' %}active fw-bold{% endif %}" href="/mediation">
+                            纠纷调解
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_tab == 'case' %}active fw-bold{% endif %}" href="/case">
+                            案例检索
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_tab == 'policy' %}active fw-bold{% endif %}" href="/policy">
+                            政策公示
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn btn-warning btn-sm ms-3" onclick="alert('字体已放大')">长辈模式</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 大学生创新创业项目 | 城市失地新市民权益保护——以武汉、苏北地区为例</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

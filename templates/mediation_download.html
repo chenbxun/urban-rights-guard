@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mt-4">
+
+    <div class="col-md-3 mb-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary text-white fw-bold py-3">
+                ⚖️ 调解服务大厅
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="/mediation/apply" class="list-group-item list-group-item-action py-3 d-flex justify-content-between align-items-center">
+                    快速调解入口
+                    <span class="badge bg-danger rounded-pill">Hot</span>
+                </a>
+                <a href="/mediation/status" class="list-group-item list-group-item-action py-3">
+                    纠纷调解进度查询
+                </a>
+                <a href="/mediation/upload" class="list-group-item list-group-item-action py-3">
+                    录像/录音上传
+                </a>
+                <a href="/mediation/download" class="list-group-item list-group-item-action py-3 sidebar-active">
+                    录像/录音下载
+                </a>
+                <a href="/mediation/hotline" class="list-group-item list-group-item-action py-3 text-muted">
+                    <small>24小时人工热线</small>
+                </a>
+            </div>
+        </div>
+
+        <div class="alert alert-info mt-3 shadow-sm border-0 small">
+            <i class="bi bi-info-circle-fill"></i> 提示：
+            上传录音录像前，请确保文件格式为 MP3 或 MP4，大小不超过 500M。
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <div class="card shadow border-0">
+            <div class="card-header bg-white border-bottom py-3 d-flex justify-content-between align-items-center">
+                <h4 class="fw-bold text-primary mb-0">💾 录音录像下载中心</h4>
+                <a href="/mediation" class="btn btn-outline-secondary btn-sm">
+                    &lt; 返回专家列表
+                </a>
+            </div>
+            <div class="card-body p-4">
+                
+                {% if files %}
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col" style="width: 5%">#</th>
+                                <th scope="col" style="width: 55%">文件名</th>
+                                <th scope="col" style="width: 20%">文件大小</th>
+                                <th scope="col" style="width: 20%" class="text-end">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for file in files %}
+                            <tr>
+                                <th scope="row">{{ loop.index }}</th>
+                                <td>
+                                    <i class="bi bi-file-earmark-play text-primary me-2"></i>
+                                    {{ file.name }}
+                                </td>
+                                <td class="text-muted small">{{ file.size }}</td>
+                                <td class="text-end">
+                                    <a href="/mediation/download/{{ file.name }}" class="btn btn-outline-primary btn-sm rounded-pill" target="_blank">
+                                        ⬇ 下载
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                    <div class="alert alert-warning text-center py-4">
+                        <h4 class="alert-heading">暂无文件</h4>
+                        <p>当前档案库中没有可用的录音或录像证据。</p>
+                        <hr>
+                        <a href="/mediation/upload" class="btn btn-warning">去上传一个测试文件</a>
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* 侧边栏选中样式 */
+    .sidebar-active {
+        background-color: #fff !important;
+        color: #0d6efd !important;
+        font-weight: bold;
+        border-left: 5px solid #0d6efd !important;
+        padding-left: 15px !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+</style>
+{% endblock %}

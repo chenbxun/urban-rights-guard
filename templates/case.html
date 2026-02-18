@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+
+        <div class="text-center mb-5 mt-4">
+            <h2 class="fw-bold text-primary">智能司法案例库</h2>
+            <p class="text-muted">汇集民事、刑事、行政及执行监督典型案例 | 智能匹配争议焦点</p>
+        </div>
+
+        <div class="card shadow border-0 mb-4" style="border-radius: 15px;">
+            <div class="card-body p-4 bg-light" style="border-radius: 15px;">
+                <form action="/case/search" method="post" class="d-flex gap-2">
+                    <input type="text" name="keyword" class="form-control form-control-lg border-0 shadow-sm" 
+                           placeholder="输入案由、关键词或当事人，例如：合同诈骗、拆迁补偿..." 
+                           value="{{ search_query }}">
+                    <button type="submit" class="btn btn-primary btn-lg px-4 shadow-sm">🔍 搜索</button>
+                </form>
+                
+                <div class="mt-3 d-flex justify-content-center gap-2 flex-wrap">
+                    <span class="text-muted small align-self-center me-1">快速筛选:</span>
+                    <a href="/case?category=全部" class="badge rounded-pill text-decoration-none {% if current_category == '全部' %}bg-dark{% else %}bg-secondary{% endif %}">全部</a>
+                    <a href="/case?category=民事" class="badge rounded-pill text-decoration-none {% if current_category == '民事' %}bg-primary{% else %}bg-secondary{% endif %}">🏠 民事</a>
+                    <a href="/case?category=刑事" class="badge rounded-pill text-decoration-none {% if current_category == '刑事' %}bg-danger{% else %}bg-secondary{% endif %}">🚔 刑事</a>
+                    <a href="/case?category=行政" class="badge rounded-pill text-decoration-none {% if current_category == '行政' %}bg-success{% else %}bg-secondary{% endif %}">🏛️ 行政</a>
+                    <a href="/case?category=执行监督类" class="badge rounded-pill text-decoration-none {% if current_category == '执行监督类' %}bg-warning text-dark{% else %}bg-secondary{% endif %}">🔨 执行监督类</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">
+                    {% if search_query %}
+                        找到相关结果 {{ results|length }} 条 (已按相关度排序)
+                    {% else %}
+                        最新入库案例
+                    {% endif %}
+                </span>
+            </div>
+
+            {% for item in results %}
+            <a href="/case/detail/{{ item.case_no }}" class="list-group-item list-group-item-action p-4 mb-3 border-0 shadow-sm rounded-3 hover-shadow">
+                <div class="d-flex w-100 justify-content-between align-items-start">
+                    <div>
+                        <h5 class="mb-2 fw-bold text-dark">
+                            {{ item.title }}
+                            {% if item.category == '民事' %}
+                                <span class="badge bg-primary ms-2" style="font-size: 0.7em;">民事</span>
+                            {% elif item.category == '刑事' %}
+                                <span class="badge bg-danger ms-2" style="font-size: 0.7em;">刑事</span>
+                            {% elif item.category == '行政' %}
+                                <span class="badge bg-success ms-2" style="font-size: 0.7em;">行政</span>
+                            {% else %}
+                                <span class="badge bg-warning text-dark ms-2" style="font-size: 0.7em;">执行监督类</span>
+                            {% endif %}
+                        </h5>
+                        <small class="text-muted d-block mb-2">案号：{{ item.case_no }}</small>
+                    </div>
+                    {% if item.score %}
+                    <span class="badge bg-light text-primary border border-primary">匹配度: {{ item.score }}</span>
+                    {% endif %}
+                </div>
+                
+                <p class="mb-2 text-secondary" style="font-size: 0.95rem; line-height: 1.6;">
+                    {{ item.summary | safe }}
+                </p>
+                
+                <div class="mt-2">
+                    {% for keyword in item.keywords %}
+                        <span class="badge bg-light text-secondary border me-1">#{{ keyword }}</span>
+                    {% endfor %}
+                </div>
+            </a>
+            {% else %}
+            <div class="text-center py-5">
+                <img src="https://cdn-icons-png.flaticon.com/512/7486/7486747.png" width="100" class="mb-3 opacity-50">
+                <p class="text-muted">暂无符合条件的案例，请尝试更换关键词。</p>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .hover-shadow { transition: transform 0.2s; }
+    .hover-shadow:hover { transform: translateY(-2px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)!important; }
+</style>
+{% endblock %}
